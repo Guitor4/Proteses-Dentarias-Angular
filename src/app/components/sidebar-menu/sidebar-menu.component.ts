@@ -42,7 +42,7 @@ export class SidebarMenuComponent implements OnInit {
       {
         label: 'Teste',
         command: () => {
-          console.log('RODEI');
+          this.display = !this.display;
         }
       },
       {

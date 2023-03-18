@@ -15,6 +15,6 @@ export class LoginComponent {
 
   login() {
     console.log('LOGUEI');
-    window.location.replace('/teste');
+    window.location.replace('/home');
   }
 }

@@ -7,9 +7,9 @@ import { SidebarMenuComponent } from './components/sidebar-menu/sidebar-menu.com
 const routes: Routes = [
   { path: 'login', pathMatch: 'full', component: LoginComponent },
   { path: 'resetPassword', pathMatch: 'full', component: HomeComponent },
-  { path: '', pathMatch: 'full', component: SidebarMenuComponent },
+  { path: '', pathMatch: 'full', redirectTo:'home' },
   {
-    path: 'teste', component: SidebarMenuComponent, children: [
+    path: '', component: SidebarMenuComponent, children: [
       { path: 'home', component: HomeComponent },
 
     ],

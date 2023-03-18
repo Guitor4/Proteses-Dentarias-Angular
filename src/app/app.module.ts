@@ -10,12 +10,12 @@ import { NotFoundComponent } from './shared/components/not-found/not-found.compo
 import { ResetPasswordComponent } from './components/reset-password/reset-password.component';
 import { LoginModule } from './components/login/login.module';
 import { SidebarMenuModule } from './components/sidebar-menu/sidebar-menu.module';
+import { HomeModule } from './components/home/home.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     DentistsComponent,
-    HomeComponent,
     NotFoundComponent,
     ResetPasswordComponent,
   ],
@@ -24,7 +24,8 @@ import { SidebarMenuModule } from './components/sidebar-menu/sidebar-menu.module
     BrowserAnimationsModule,
     AppRoutingModule,
     LoginModule,
-    SidebarMenuModule
+    SidebarMenuModule,
+    HomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

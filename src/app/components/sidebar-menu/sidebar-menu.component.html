@@ -1,15 +1,17 @@
-<p-menubar [model]="items" styleClass="navbar" class="navbar">
-    <ng-template pTemplate="start">
-        <img src="assets/images/dentist-logo.png" height="100" class="mr-2" (click)="redirectToLogin()">
-    </ng-template>
-    <ng-template pTemplate="end">
-        <p class="mr-3">Bem vindo, Guilherme</p>
-    </ng-template>
-</p-menubar>
+<div>
+    <p-menubar [model]="items" styleClass="navbar" class="navbar justify-content-between">
+        <ng-template pTemplate="start">
+            <img src="assets/images/dentist-logo.png" height="100" class="mr-2" (click)="redirectToLogin()">
+        </ng-template>
+        <ng-template pTemplate="end">
+            <p class="mr-3 hidden md:inline-flex">Bem vindo, Guilherme</p>
+        </ng-template>
+    </p-menubar>
 
-<p-sidebar [(visible)]="display">
-    Content
-</p-sidebar>
-
-<p-button type="text" (click)="setDisplay()" icon="pi pi-plus" label="Show"></p-button>
-<router-outlet></router-outlet>
+    <p-sidebar [(visible)]="display">
+        Content
+    </p-sidebar>
+</div>
+<div style="height:100%; display:block">
+    <router-outlet></router-outlet>
+</div>
