@@ -2,3 +2,13 @@
 @import url("../node_modules/primeicons/primeicons.css");
 @import url("../node_modules/primeng/resources/themes/saga-orange/theme.css");
 @import url("../node_modules/primeng/resources/primeng.min.css");
+
+html {
+  margin: 0px;
+  height: 100%;
+  width: 100%;
+}
+
+main {
+min-height: 85vh;
+}
