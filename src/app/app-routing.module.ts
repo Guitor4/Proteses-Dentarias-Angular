@@ -7,18 +7,23 @@ import { SidebarMenuComponent } from './components/sidebar-menu/sidebar-menu.com
 const routes: Routes = [
   { path: 'login', pathMatch: 'full', component: LoginComponent },
   { path: 'resetPassword', pathMatch: 'full', component: HomeComponent },
-  { path: '', pathMatch: 'full', redirectTo:'home' },
+  // { path: '', pathMatch: 'full', redirectTo:'home' },
   {
-    path: '', component: SidebarMenuComponent, children: [
+    path: '',
+    component: SidebarMenuComponent,
+    resolve: () => console.log('carreguei'),
+    canActivate: [() => {console.log('carreguei'); return true}],
+    children: [
       { path: 'home', component: HomeComponent },
-
+      { path: 'login2', pathMatch: 'full', component: LoginComponent },
     ],
   },
-  { path: '**', redirectTo: 'teste' }
+  { path: '', pathMatch: 'full', redirectTo: 'home' },
+  { path: '**', pathMatch: 'full', redirectTo: 'home' },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
