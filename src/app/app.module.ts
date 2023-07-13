@@ -11,6 +11,8 @@ import { ResetPasswordComponent } from './components/reset-password/reset-passwo
 import { LoginModule } from './components/login/login.module';
 import { SidebarMenuModule } from './components/sidebar-menu/sidebar-menu.module';
 import { HomeModule } from './components/home/home.module';
+import { UsersComponent } from './components/users/users.component';
+import { UserComponent } from './components/user/user.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +20,8 @@ import { HomeModule } from './components/home/home.module';
     DentistsComponent,
     NotFoundComponent,
     ResetPasswordComponent,
+    UsersComponent,
+    UserComponent,
   ],
   imports: [
     BrowserModule,
