@@ -9,6 +9,12 @@ export class LocalStorageService {
   public localStorage = localStorage;
   constructor(private router: Router) {}
 
+  getUserInfo(): UserSession {
+    const userInfo = this.localStorage.getItem('userInfo');
+    if (!userInfo) this.router.navigate(['login']);
+    return JSON.parse(userInfo!);
+  }
+  
   setUserInfo(data: UserSession): void {
     this.localStorage.setItem('userInfo', JSON.stringify(data));
   }
@@ -17,9 +23,4 @@ export class LocalStorageService {
     this.localStorage.clear();
   }
 
-  getUserInfo(): UserSession {
-    const userInfo = this.localStorage.getItem('userInfo');
-    if (!userInfo) this.router.navigate(['login']);
-    return JSON.parse(userInfo!);
-  }
 }
