@@ -8,6 +8,7 @@ import {ButtonModule} from 'primeng/button';
 
 
 import { LoginComponent } from './login.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -18,6 +19,7 @@ import { LoginComponent } from './login.component';
     CheckboxModule,
     InputTextModule,
     ButtonModule,
+    ReactiveFormsModule,
 
   ],
   exports: [
