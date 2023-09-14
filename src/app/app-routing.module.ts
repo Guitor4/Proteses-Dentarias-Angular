@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from 'app/components/home/home.component';
 import { LoginComponent } from 'app/components/auth/login/login.component';
-import { SidebarMenuComponent } from './components/sidebar-menu/sidebar-menu.component';
+import { SidebarMenuComponent } from './core/components/sidebar-menu/sidebar-menu.component';
 
 const routes: Routes = [
   { path: 'login', pathMatch: 'full', component: LoginComponent },

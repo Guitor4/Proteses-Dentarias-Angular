@@ -11,7 +11,7 @@ import { HomeComponent } from './components/home/home.component';
 import { NotFoundComponent } from './shared/components/not-found/not-found.component';
 import { ResetPasswordComponent } from './components/reset-password/reset-password.component';
 import { LoginModule } from './components/auth/login/login.module';
-import { SidebarMenuModule } from './components/sidebar-menu/sidebar-menu.module';
+import { SidebarMenuModule } from './core/components/sidebar-menu/sidebar-menu.module';
 import { HomeModule } from './components/home/home.module';
 import { UserComponent } from './components/user/user.component';
 
