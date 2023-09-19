@@ -1,0 +1,8 @@
+<p-menubar [model]="menuItems" class="navbar justify-content-between">
+  <ng-template pTemplate="start">
+    <img src="assets/images/dentist-logo.png" height="100" class="mr-2" (click)="redirectToLogin()">
+  </ng-template>
+  <ng-template pTemplate="end">
+    <p class="mr-3 hidden md:inline-flex">Bem vindo, {{loggedUser.user.name}}</p>
+  </ng-template>
+</p-menubar>

@@ -1,0 +1,8 @@
+<nav>
+    <prot-navbar (sidebarTrigger)="changeSidebarDisplay()"></prot-navbar>
+</nav>
+<main>
+    <prot-sidebar-menu [setDisplay]="siderbarDisplayNumber"></prot-sidebar-menu>
+    <router-outlet></router-outlet>
+</main>
+<footer></footer>
