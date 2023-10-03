@@ -6,31 +6,23 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { DentistsComponent } from './components/dentists/dentists.component';
-import { HomeComponent } from './components/home/home.component';
-import { NotFoundComponent } from './shared/components/not-found/not-found.component';
-import { ResetPasswordComponent } from './components/reset-password/reset-password.component';
-import { LoginModule } from './components/auth/login/login.module';
-import { SidebarMenuModule } from './core/components/sidebar-menu/sidebar-menu.module';
 import { HomeModule } from './components/home/home.module';
-import { UserComponent } from './components/user/user.component';
 import { CoreModule } from './core/core.module';
+import { AuthModule } from './components/auth/auth.module';
+import { DentistsModule } from './components/dentists/dentists.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    DentistsComponent,
-    NotFoundComponent,
-    ResetPasswordComponent,
-    UserComponent,
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    LoginModule,
+    AuthModule,
     CoreModule,
     HomeModule,
+    DentistsModule,
     HttpClientModule,
   ],
   providers: [ApiService],

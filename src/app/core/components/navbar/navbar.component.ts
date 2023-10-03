@@ -22,7 +22,7 @@ export class NavbarComponent implements OnInit {
           icon: 'pi pi-fw pi-plus',
           items: [{ label: 'Project' }, { label: 'Other' }],
         },
-        { label: 'Open' },
+        { label: 'Open', command: () => this.navigateTo('home') },
         { label: 'Quit' },
       ],
     },
@@ -60,5 +60,9 @@ export class NavbarComponent implements OnInit {
 
   redirectToLogin() {
     this.router.navigate(['login']);
+  }
+
+  navigateTo(path: string) {
+    this.router.navigate([path]);
   }
 }

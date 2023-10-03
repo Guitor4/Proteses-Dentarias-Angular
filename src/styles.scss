@@ -14,10 +14,55 @@ body {
 }
 
 main {
-min-height: 85vh;
+  min-height: 87vh;
+  background-image: url(assets/images/bg.jpg);
+  background-size: cover;
 }
 
-
+.h-screen-60 {
+  height: 60vh;
+}
+.h-screen-65 {
+  height: 65vh;
+}
+.h-screen-70 {
+  height: 70vh;
+}
+.h-screen-75 {
+  height: 75vh;
+}
 .h-screen-80 {
   height: 80vh;
+}
+.h-screen-85 {
+  height: 85vh;
+}
+.h-screen-90 {
+  height: 90vh;
+}
+
+.p-menubar {
+  background-color: #47b8d8 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+}// Navbar
+
+.p-menubar
+  .p-menubar-root-list
+  > .p-menuitem
+  > .p-menuitem-link
+  .p-menuitem-icon {
+  color: white !important;
+}// Ícones dos items de menu do navbar
+
+.p-menubar
+  .p-menubar-root-list
+  > .p-menuitem
+  > .p-menuitem-link
+  .p-menuitem-text {
+    color: black !important;
+}
+
+p-card {
+  background-color: var(--cyan-300);
 }
